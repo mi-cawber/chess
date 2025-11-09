@@ -1,7 +1,12 @@
-def gen_board():
-    cols = {}
-    num = range(8)
+# generate board
+def board():
+    board = []
     letters = ['a','b','c','d','e','f','g','h']
     for letter in letters:
-        
+        num = 1
+        while num < 9:
+            position = f'{letter}' + f'{dig}'
+            cols.append([position, None])
+            num += 1
+    return board
 
